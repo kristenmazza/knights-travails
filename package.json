@@ -1,0 +1,20 @@
+{
+  "name": "knights-travails",
+  "version": "1.0.0",
+  "description": "Knights travails",
+  "main": "knights-travails.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristenmazza/knights-travails.git"
+  },
+  "author": "Kristen Mazza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristenmazza/knights-travails/issues"
+  },
+  "homepage": "https://github.com/kristenmazza/knights-travails#readme",
+  "type": "module"
+}

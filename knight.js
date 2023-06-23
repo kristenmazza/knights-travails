@@ -1,6 +1,7 @@
 export default class Knight {
   constructor(current) {
     this.possibleMoves = this.nextPossibleMoves(current);
+    this.place = current;
     this.previous = null;
     this.distance = null;
   }
@@ -25,10 +26,10 @@ export default class Knight {
       ]);
     });
 
-    const availableMobes = nextPossibleMoves.filter(
+    const availableMoves = nextPossibleMoves.filter(
       (i) => i[0] >= 0 && i[0] <= 7 && i[1] >= 0 && i[1] <= 7
     );
 
-    return availableMobes;
+    return availableMoves;
   }
 }

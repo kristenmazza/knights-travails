@@ -12,12 +12,14 @@ const offsetMoves = [
 export default class Node {
   constructor(current) {
     this.coordinates = current;
-    this.nextMoves = [];
     this.path = [];
   }
 
+  // Returns an array of the next available moves of a node
   nextAvailableMoves() {
     let nextPossibleMoves = [];
+
+    // Creates array of possible moves by offsetting the node's coordinates the 8 different ways a knight can move
     offsetMoves.forEach((offsetMove) => {
       nextPossibleMoves.push([
         offsetMove[0] + this.coordinates[0],
@@ -25,6 +27,7 @@ export default class Node {
       ]);
     });
 
+    // Filters out moves from nextPossibleMoves that are off the 8x8 board
     const availableMoves = nextPossibleMoves.filter(
       (i) => i[0] >= 0 && i[0] <= 7 && i[1] >= 0 && i[1] <= 7
     );

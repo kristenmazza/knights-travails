@@ -1,6 +1,6 @@
 import Node from "./node.js";
 
-export default function knightMoves(root, target) {
+function knightMoves(root, target) {
   if (!root || !target) return;
 
   let start = new Node(root);
@@ -45,6 +45,7 @@ export default function knightMoves(root, target) {
   }
 }
 
+// Test cases
 knightMoves([1, 3], [5, 6]);
 // => You made it in 3 moves! Here's your path:
 // [ 1, 3 ]
